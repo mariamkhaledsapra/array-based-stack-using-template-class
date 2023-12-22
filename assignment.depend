@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1703111623 source:c:\users\master\assignment\main.cpp
+	<iostream>
+	"Stack.h"
+
+1703111670 c:\users\master\assignment\stack.h
+	<iostream>
+	<stdexcept>
+	"Stack.cpp"
+
+1703111647 c:\users\master\assignment\stack.cpp
+	"Stack.h"
+
