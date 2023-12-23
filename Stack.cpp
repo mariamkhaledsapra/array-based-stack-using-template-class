@@ -6,7 +6,7 @@ template <class T>
          top = -1;
          Count=0;
          MAX_SIZE=size;
-         Stack = new T[MAX_SIZE];
+         stack = new T[MAX_SIZE];
 }
 
 
@@ -15,10 +15,10 @@ template< class T>
   {
          top(original.top);
          MAX_SIZE(original.MAX_SIZE );
-         Stack=new int (MAX_SIZE);
+         stack=new int (MAX_SIZE);
         for(int i=0; i<MAX_SIZE; i++)
         {
-          Stack(i)=original.Stack(i);
+          stack(i)=original.stack(i);
         }
   }
 
@@ -37,7 +37,7 @@ template <class T>
           cout<<"Stack is full";
     else{
         top++;
-        Stack [top]=value;
+        stack [top]=value;
         Count++;}
     }
 
@@ -55,7 +55,7 @@ template <class T>
         if (StackIsEmpty())
              cout<<"Stack is full & under flow";
     else{
-        value =Stack [top];
+        value =stack [top];
         top--;
         Count--;
         }
@@ -77,14 +77,14 @@ template <class T>
     if (StackIsEmpty())
              cout<<"Stack is full & under flow";
       else
-        value =Stack[top];
+        value =stack[top];
   }
 
 
 //deconstructor
 template <class T>
   Stack<T>::~Stack() {
-          delete [] Stack;
+          delete [] stack;
 }
 
 
